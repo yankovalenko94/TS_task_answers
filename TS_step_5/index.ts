@@ -50,6 +50,6 @@ function checkAnimalData(animal: Res): object | string {
 	if (isAvailable(animal)) {
 		return animal.data;
 	} else {
-		return `${animal.data}, you can try in ${animal.data.nextUpdateIn}`;
+		return `${animal.data.message}, you can try in ${animal.data.nextUpdateIn}`;
 	}
 }
