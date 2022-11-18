@@ -46,7 +46,7 @@ function isAvailable(res: Res): res is AnimalAvailableResponse {
 	}
 }
 
-function checkAnimalData(animal: Res): object | string {
+function checkAnimalData(animal: Res): AnimalAvailableData | string {
 	if (isAvailable(animal)) {
 		return animal.data;
 	} else {
