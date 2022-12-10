@@ -11,7 +11,7 @@ function transferEurToUsd(
 	commission: number
 ): void {
 	if (available) {
-		let res = fetchCurr(currRate) * amount * commission;
+		let res: number = fetchCurr(currRate) * amount * commission;
 		console.log(res);
 		// Или запись в элемент на странице вместо консоли
 	} else {
